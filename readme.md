@@ -1,4 +1,8 @@
-# Dataset Distillation by Matching Training Trajectories
+# (Forked) Dataset Distillation by Matching Training Trajectories
+
+## Fork modification notice
+
+This fork prints the model layers and the number of parameters to the terminal, which is useful for debugging.
 
 ### [Project Page](https://georgecazenavette.github.io/mtt-distillation/) | [Paper](https://arxiv.org/abs/2203.11932)
 <br>

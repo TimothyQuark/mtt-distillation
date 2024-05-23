@@ -68,6 +68,21 @@ def main(args):
 
         ''' Train synthetic data '''
         teacher_net = get_network(args.model, channel, num_classes, im_size).to(args.device) # get a random model
+
+        # Addition to MTT code that prints out the model layers
+        if it == 0:
+            from torchinfo import summary
+            print(f"Debug image dimensions: {im_size}")
+            summary(
+                teacher_net,
+                input_size=(
+                    args.batch_real,
+                    channel,
+                    im_size[0],
+                    im_size[1],
+                )
+            )
+
         teacher_net.train()
         lr = args.lr_teacher
         teacher_optim = torch.optim.SGD(teacher_net.parameters(), lr=lr, momentum=args.mom, weight_decay=args.l2)  # optimizer_img for synthetic data
