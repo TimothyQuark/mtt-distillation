@@ -2,7 +2,9 @@
 
 ## Fork modification notice
 
-This fork prints the model layers and the number of parameters to the terminal, which is useful for debugging.
+This fork prints the model layers and the number of parameters to the terminal, which is useful for debugging. For example, here are the model layers for the command defined in the section 'Generating Expert Trajectories':
+
+<img src='docs/model-parameters-conv-cifar100.png' width=600>
 
 ### [Project Page](https://georgecazenavette.github.io/mtt-distillation/) | [Paper](https://arxiv.org/abs/2203.11932)
 <br>
